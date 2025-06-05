@@ -10,7 +10,7 @@ class LoginPageLocators():
 
 
 class ProductPageLocators():
-    ADD_BASKET_BUTTON = (By.CSS_SELECTOR, "button[value='Добавить в корзину']")
+    ADD_BASKET_BUTTON = (By.CLASS_NAME, "btn.btn-lg.btn-primary.btn-add-to-basket")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".col-sm-6.product_main h1")
     ADD_BASKET_MESSAGE = (By.CSS_SELECTOR, ".alertinner")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".col-sm-6.product_main p[class='price_color']")

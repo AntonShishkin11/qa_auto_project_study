@@ -23,7 +23,7 @@ class ProductPage(BasePage):
     def should_be_correct_add_to_basket_message(self):
         message = self.browser.find_element(*ProductPageLocators.ADD_BASKET_MESSAGE).text
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
-        assert message.strip() == f'{product_name} был добавлен в вашу корзину.', 'Add to basket message is incorrect'
+        assert message == f"{product_name} has been added to your basket.", 'Add to basket message is incorrect'
 
     def should_be_correct_price_in_basket_message(self):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
