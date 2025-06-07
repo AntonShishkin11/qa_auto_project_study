@@ -39,3 +39,5 @@ class ProductPage(BasePage):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
         price_in_message = self.browser.find_element(*ProductPageLocators.BASKET_PRICE).text
         assert product_price == price_in_message, "Price in message and price of product don't match"
+
+
